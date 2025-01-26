@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaspar Sinitsin, Full-Stack Dev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lightBlue80: '#7CD9F8',
+            brightYellow: '#FFC71E',
+            darkBlue90: '#0B0630',
+            lightYellow: '#FBFB97',
+            brightRed: '#EC2D2D',
+            brightOrange90: '#ED4229',
+          },
+          fontFamily: {
+            monoton: ['Monoton', 'sans'],
+            shrikhandH: ['Shrikhand', 'serif'],
+            maitreeText: ['Maitree', 'serif'],
+            novaList: ['Nova Flat', 'sans'],
+            gravitas: ['Gravitas One', 'serif'],
+          },  
+          keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(20%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 40s linear infinite',
+      },
+        },
+      },
+    };
+  </script>
+   <script 
+   src="https://kit.fontawesome.com/f49a379e4a.js"
+   crossorigin="anonymous"></script>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Maitree:wght@200;300;400;500;600;700&family=Monoton&family=Nova+Flat&family=Shrikhand&display=swap');
+    </style>
+</head>
+<body class="border-box max-w-full overflow-x-hidden">
+    <header class="h-full">
+        <section class="flex justify-between px-2 md:px-8 gap-3 md:gap-8 bg-brightYellow text-darkBlue90 text-opacity-90 py-4">
+          <div class="pl-2 font-maitreeText font-bold flex flex-col md:flex-row">
+            <h1><h1>K.F.</h1><h1>Sinitsin</h1>
+          </div>
+        <nav class="flex justify-between text-sm md:text-base gap-3 md:gap-8 mx-4 font-monoton"><a href="#about">ABOUT</a>
+        <a href="#CV">CV</a>
+        <a href="#contact">CONTACT</a></nav>
+      </section>
+        <section class="flex">
+            <div class="bg-lightBlue80 bg-opacity-80 justify-center w-1/2 md:py-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-monoton text-center text-brightOrange90 opacity-90 mt-6 drop-shadow-md md:drop-shadow-xl">Kaspar</h2>
+                <h2 class="text-center text-[5rem] sm:text-8xl md:text-[10rem] lg:text-[14rem] md:-mb-2 lg:-mb-10 font-shrikhandH text-brightOrange90 opacity-90 leading-[4rem] md:leading-[8rem] lg:leading-[12rem] drop-shadow-md md:drop-shadow-xl">Sin</h2>
+                <h2 class="text-center text-[5rem] sm:text-8xl md:text-[10rem] lg:text-[14rem] pl-10 md:pl-12 lg:pl-24 font-shrikhandH text-brightOrange90 opacity-90 leading-[4rem] md:leading-[8rem] lg:leading-[16rem] drop-shadow-md md:drop-shadow-xl">its</h2>
+                <h2 class="text-center text-[5rem] sm:text-8xl md:text-[10rem] lg:text-[14rem] pr-6 md:pr-20 font-shrikhandH text-brightOrange90 opacity-90 leading-[4rem] md:leading-[8rem] lg:leading-[7rem] mb-6 drop-shadow-md md:drop-shadow-xl">in</h2>
+          </div>
+            <div class="flex flex-col bg-darkBlue90 bg-opacity-90 w-1/2 md:py-20">
+                <div class="justify-center mx-auto my-8 bg-[url('/img/1-frame.gif')] opacity-80 hover:opacity-100 hover:bg-[url('/img/1.gif')] w-[40vw] h-[40vw] md:w-[50vw] md:h-[50vw] max-w-[374px] max-h-[374px] bg-cover bg-center rounded-full"></div>
+                <p class="text-center text-lg md:text-2xl mx-2 md:mx-auto mt-4 text-lightYellow font-maitreeText">Junior Full-Stack Developer</p>
+                <p class="text-center text-lg md:text-2xl mx-auto mb-4 text-lightYellow font-maitreeText">UX/UI Designer</p>
+            </div>
+        </section>
+        <section class="grid grid-cols-1 grid-rows-3 bg-brightYellow h-20 w-full overflow-hidden">
+          <div class="relative h-8 py-2 justify-center w-full">
+            <p class="my-4 absolute bg-darkBlue90 w-auto text-lightYellow text-start pl-2 py-2 text-xl whitespace-nowrap animate-scroll scroll tracking-widest">Kaspar Fedorovich Sinitsin: Born on the 24th of December 1992, in Saint Petersburg, Russia. Moved to Berlin, Germany, in 2015. Started coding in 2020. Completed a 6-month UX/UI Engineering course at the Beam Institute of Technology, Berlin, in 2024. Currently pursuing a Full-Stack Web & App Development course at WBS Coding School, Berlin, expected to finish in April 2025. <i>Fun fact:</i> The last name <i>"Sinitsin"</i> comes from <i>"sinitsa"</i>, the Russian name for a blue tit bird — and that’s why it’s featured here.
+            </p>
+          </div>
+        </section>
+      </section>
+        </header>
+      <main>
+        <article class="bg-gradient-to-b from-brightYellow via-brightRed/80 to-brightRed/70 py-8">
+        </article>
+        <article id="about" class="flex flex-col w-full bg-gradient-to-b from-brightRed/70 to-darkBlue90/90 py-12 px-4 sm:px-8 lg:px-24">
+          <h3 class="font-gravitas font-bold text-2xl md:text-4xl lg:text-6xl text-brightYellow text-center mt-4 mb-12 sm:mb-24">About Me</h3>
+          <p class="text-right text-sm sm:text-lg lg:text-2xl font-maitreeText text-lightYellow sm:px-12 md:px-24 lg:px-72 py-8">
+            Freshly graduated Full Stack+UX/UI Engineer passionate about coding and design. My diverse experience as a multifaceted artist, translator of literary works, poems, and songs, customer care agent, and event manager enables me to understand a broad spectrum of users. I always aim to provide engaging and memorable experiences to my clients.
+          </p>
+        </article>
+        <article id="CV" class="bg-gradient-to-b from-darkBlue90/90 via-darkBlue90/80 to-violet-950/80 pt-12">
+          <section class="flex flex-col">
+            <h3 class="font-gravitas font-bold text-center text-2xl md:text-4xl lg:text-6xl text-brightYellow my-20">CV</h3><p class="text-xl text-center text-lightYellow font-maitreeText">Download my CV in PDF:</p>
+            <button class="px-3 py-2 bg-brightOrange90/60 mx-auto rounded-lg mt-8 text-lg text-lightYellow font-novaList"><a href="./cvs/cv-eng.pdf">English</a></button>
+            <button class="p-2 bg-brightOrange90/60 mx-auto rounded-lg mt-2 mb-10 text-lg text-lightYellow font-novaList"><a href="./cvs/cv-de.pdf">Deutsch</a></button>
+          </section>
+          <section class="flex flex-col">
+          <h4 class="font-gravitas text-center text-xl md:text-3xl lg:text-4xl text-brightRed/80 mt-24 mb-28 mx-2">Main instruments and skills</h4>
+          <div class="flex flex-col justify-center mx-auto md:flex-row md:justify-around md:gap-32 lg::gap-48">
+          <ul class="text-lg lg:text-2xl font-novaList text-lightYellow">
+          <li>VS Code</li>
+          <li>Git+Github</li>
+          <li>Figma</li>
+          <li>Wordpress</li>
+          </ul>
+          <ul class="text-lg lg:text-2xl font-novaList text-lightYellow">
+            <li>HTML+CSS</li>
+            <li>React+Vite</li>
+            <li>Bootstrap, Tailwind</li>
+            <li>JavaScript</li>
+            </ul>
+            <ul class="text-lg lg:text-2xl font-novaList text-lightYellow">
+              <li>Adobe CC</li>
+              <li>Inkscape</li>
+              <li>Piano</li>
+              </ul>
+            </div>
+        </section>
+        <section class="px-8 md:px-32 py-12">
+          <h4 class="font-gravitas font-bold text-center text-xl md:text-3xl lg:text-4xl text-brightRed/80 mt-24 mb-20">
+            Professional Experience
+          </h4>
+          <div class="relative border-l-4 border-brightYellow pl-8 space-y-12">
+            <div>
+              <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2010-2024</p>
+              <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                Freelance Translator
+              </h5>
+              <p class="text-lightBlue80 font-maitreeText">translated literary works, songs, and poems (EN-RU)</p>
+            </div>
+            <div>
+              <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2011-2015</p>
+              <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                Independant Perfomance Artist
+              </h5>
+            </div>
+            <div>
+              <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2012–2014</p>
+              <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                Office Manager
+              </h5>
+              <p class="text-lightBlue80 font-maitreeText">Hirsh Real Estate Agency, Saint Petersburg</p>
+            </div>
+            <div>
+              <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2014–2015</p>
+              <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                Event Manager
+              </h5>
+              <p class="text-lightBlue80 font-maitreeText">Petersart Event Agency, Saint Petersburg</p>
+            </div>
+            <div>
+              <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2016–2017</p>
+              <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                Customer Care Agent
+              </h5>
+              <p class="text-lightBlue80 font-maitreeText">
+                Arvato Bertelsmann, Berlin
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="px-8 md:px-32 md:py-6">
+          <h4 class="font-gravitas font-bold text-center text-xl md:text-3xl lg:text-4xl text-brightRed/80 mt-4 mb-24">
+            Education
+          </h4>
+          <div class="relative border-l-4 border-brightYellow pl-8 space-y-12">
+            <div>
+              <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2010-2014</p>
+              <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                Linguistics and Translation
+              </h5>
+              <p class="text-lightBlue80 font-maitreeText">Saint Petersburg State University of Aerospace Instrumentation</p>
+            </div>
+              <div>
+                <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2014-2015</p>
+                <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                  Industrial Design
+                </h5>
+                <p class="text-lightBlue80 font-maitreeText">Saint Petersburg State Marine University</p>
+              </div>
+            <div>
+              <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2024</p>
+              <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+                UX/UI Design and Programming
+              </h5>
+              <p class="text-lightBlue80 font-maitreeText">BIT School, Berlin</p>
+            </div>
+          <div>
+            <p class="text-2xl md:text-4xl font-bold text-brightYellow mb-2">2025</p>
+            <h5 class="text-xl md:text-2xl font-novaList text-lightYellow">
+              Full-Stack Web & App Development
+            </h5>
+            <p class="text-lightBlue80 font-maitreeText">WBS Coding School, Berlin</p>
+          </div>
+        </section>
+        </article>
+        <article id="contact" class="bg-gradient-to-b from-violet-950/80 via-violet-900/70 to-brightRed/70 py-16">
+          <h3 class="font-gravitas font-bold text-center text-2xl md:text-4xl lg:text-6xl text-brightYellow pt-4 mb-28">Contact</h3>
+          <ul class="text-lightYellow space-y-4">
+            <li class="flex justify-center items-center text-xl font-nova pb-4"><a href="tel:+4915758329492"><i class="fa-solid text-darkBlue90 fa-phone -ml-6 mr-4"></i> +49 (157) 58 32 94 92</a></li>
+            <li class="flex justify-center items-center text-xl font-nova pb-4"><a href="email:kaspar.sinitsin@gmail.com"><i class="fa-regular text-darkBlue90 fa-envelope mr-4"></i> kaspar.sinitsin@gmail.com</a></li>
+            <li class="flex justify-center items-center text-xl font-nova pb-4"><a href="https://github.com/KasparSinitsin"><i class="fa-brands text-darkBlue90 fa-github mr-4"></i> github.com/KasparSinitsin</a></li>
+            <li class="flex justify-center items-center text-xl font-nova pb-4"><a href="https://www.linkedin.com/in/kasparsinitsin/"><i class="fa-brands text-darkBlue90 fa-linkedin mr-4 ml-8"></i> linkedin.com/in/KasparSinitsin</a></li>
+          </ul>
+          <div class="flex flex-col text-center py-16 mt-20 text-xl md:text-3xl"><h3 class="text-brightYellow font-extrabold text-xl md:text-3xl font-gravitas pb-8">HMU!</h3>
+          <i class="fa-solid fa-2xl text-darkBlue90 fa-otter"></i>  
+          </div>
+        </article>
+        <article class="bg-gradient-to-b from-brightRed/70 via-brightRed/80 to-brightYellow py-8">
+        </article>
+    </main>
+<footer class="flex justify-between px-4 md:px-8 gap-3 md:gap-8 bg-brightYellow text-darkBlue90 text-opacity-90 py-6">
+    <nav class="flex justify-between text-sm md:text-base gap-8 font-monoton"><a href="#about">ABOUT</a>
+        <a href="#CV">CV</a>
+        <a href="#contact">CONTACT</a></nav>
+        <div class="font-maitreeText font-bold flex flex-col md:flex-row">
+        <h1><h1>K.F.</h1><h1>Sinitsin</h1>
+      </div>
+</footer>
+</body>
+</html>
