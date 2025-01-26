@@ -61,11 +61,17 @@
                 <h2 class="text-center text-[5rem] sm:text-8xl md:text-[10rem] lg:text-[14rem] pl-10 md:pl-12 lg:pl-24 font-shrikhandH text-brightOrange90 opacity-90 leading-[4rem] md:leading-[8rem] lg:leading-[16rem] drop-shadow-md md:drop-shadow-xl">its</h2>
                 <h2 class="text-center text-[5rem] sm:text-8xl md:text-[10rem] lg:text-[14rem] pr-6 md:pr-20 font-shrikhandH text-brightOrange90 opacity-90 leading-[4rem] md:leading-[8rem] lg:leading-[7rem] mb-6 drop-shadow-md md:drop-shadow-xl">in</h2>
           </div>
-            <div class="flex flex-col bg-darkBlue90 bg-opacity-90 w-1/2 md:py-20">
-                <div class="justify-center mx-auto my-8 bg-[url('./src/1-frame.gif')] opacity-80 hover:opacity-100 hover:bg-[url('./src/1.gif')] w-[40vw] h-[40vw] md:w-[50vw] md:h-[50vw] max-w-[374px] max-h-[374px] bg-cover bg-center rounded-full"></div>
-                <p class="text-center text-lg md:text-2xl mx-2 md:mx-auto mt-4 text-lightYellow font-maitreeText">Junior Full-Stack Developer</p>
-                <p class="text-center text-lg md:text-2xl mx-auto mb-4 text-lightYellow font-maitreeText">UX/UI Designer</p>
+          <div class="flex flex-col bg-darkBlue90 bg-opacity-90 w-1/2 md:py-20">
+            <!-- Image container with hover effect -->
+            <div class="relative w-[40vw] h-[40vw] md:w-[50vw] md:h-[50vw] max-w-[374px] max-h-[374px] rounded-full overflow-hidden group mx-auto my-8">
+                <!-- Default image -->
+                <img src="./src/1-frame.gif" alt="Frame" class="w-full h-full object-cover group-hover:hidden">
+                <!-- Hover image -->
+                <img src="./src/1.gif" alt="Gif on hover" class="w-full h-full object-cover absolute top-0 left-0 hidden group-hover:block">
             </div>
+            <p class="text-center text-lg md:text-2xl mx-2 md:mx-auto mt-4 text-lightYellow font-maitreeText">Junior Full-Stack Developer</p>
+            <p class="text-center text-lg md:text-2xl mx-auto mb-4 text-lightYellow font-maitreeText">UX/UI Designer</p>
+        </div>
         </section>
         <section class="grid grid-cols-1 grid-rows-3 bg-brightYellow h-20 w-full overflow-hidden">
           <div class="relative h-8 py-2 justify-center w-full">
